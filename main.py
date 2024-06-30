@@ -3,12 +3,10 @@ from UI.menu import Menu
 from UI.game_over import GameOver
 from Logic.game_logic import GameLogic
 
-
 def main():
     """
-    Main function that initializes and runs the Connect Four game.
-    It sets up the game window, loads sounds, and manages the game loop,
-    switching between the menu, game, and game over screens.
+    Main function that initializes the game and handles the main game loop,
+    switching between the menu and the game.
     """
     pygame.init()
     pygame.mixer.init()
@@ -42,7 +40,6 @@ def main():
             break
 
     pygame.quit()
-
 
 if __name__ == "__main__":
     main()
